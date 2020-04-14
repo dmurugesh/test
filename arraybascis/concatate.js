@@ -1,0 +1,37 @@
+var readline = require("readline-sync");
+var word1 = readline.question("enter first word :");
+var word2 = readline.question("Enter second word :");
+
+function concatenate (a, b) {
+    let sum = a + b;
+    console.log( "The Sum :" , (a + b));
+}
+function reverseString(word1) {
+    // Step 1. Create an empty string that will host the new created string
+    var newString = "";
+ 
+    // Step 2. Create the FOR loop
+    /* The starting point of the loop will be (str.length - 1) which corresponds to the 
+       last character of the string, "o"
+       As long as i is greater than or equals 0, the loop will go on
+       We decrement i after each iteration */
+    for (var i = word1.length - 1; i >= 0; i--) { 
+        newString += word1[i]; // or newString = newString + str[i];
+    }
+    /* Here hello's length equals 5
+        For each iteration: i = str.length - 1 and newString = newString + str[i]
+        First iteration:    i = 5 - 1 = 4,         newString = "" + "o" = "o"
+        Second iteration:   i = 4 - 1 = 3,         newString = "o" + "l" = "ol"
+        Third iteration:    i = 3 - 1 = 2,         newString = "ol" + "l" = "oll"
+        Fourth iteration:   i = 2 - 1 = 1,         newString = "oll" + "e" = "olle"
+        Fifth iteration:    i = 1 - 1 = 0,         newString = "olle" + "h" = "olleh"
+    End of the FOR Loop*/
+ 
+    // Step 3. Return the reversed string
+    return newString; // "olleh"
+    console.log(newString);
+
+
+
+concatenate(word1, word2);
+reverseString(word1, word2);
