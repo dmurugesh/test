@@ -1,0 +1,126 @@
+Head first Learning principle 
+1. Make visuals 
+2. Use a conversational and personalized style
+3. Get the learner to think more deepls
+4. get - and keep the readers attention
+5. touch thier emotions
+
+what YOU can do to bend your brain into submission
+1. Slow down. The more you understand, the less you have to memorize
+2. Do the excercises, Write notes
+3. Read the there are No dumb question
+4. Make this the last think you read before bed. or at least the last challenging thing
+5. Drink water. Lots of it.
+6. Talk about it. Out loud.
+7. Listen to your brain.
+8. Feel something!
+9. Create something!
+10 Get Sleep.
+
+Chapter 1 - A quick dip into Javascript 
+
+Basics 
+1. Each statement ends in a semicolon
+2. A single line comment begins with two forward slashes. Comments are just notes to you or other developers about the code.They aren’t executed.
+3. Whitespace doesnt matter (almost everywhere).
+4.  Don’t use quotes around the boolean values true and false.
+5. Variables don’t have to be given a value when they are declared:
+	eg : var width;
+6.  JavaScript, unlike HTML markup, is case sensitive, meaning upper- and lowercase matters.The variable counter is different from the
+	eg: variable Counter.
+
+
+Chapter 2 - Going futher
+
+1. Pseudocode gives us the logic or apprximation of what your real code should do. 
+2. Before writing an code always try to write the flow chart first 
+3. There are two types of boolean operators: 
+   i) comparison operators - >, <, >=, <=, ==, !=.
+   ii).logical operators. - && (and), ||(or) 
+   When used in an expression, boolean operators result in a true or false value.
+4. Math.random() - helps us in creating random value b/w 0 and 1 
+5. Math.floor() - helps us in round the decimal value to nearest integer
+5. Prompt - is used to get input from use to enter value
+6. alert - is used to show message to user 
+
+
+Chapter 3  - Functions
+
+1. Using functions we can write code that can be applied to all sorts of different circumstances. To be more clear using functions we can implement the code which is resuable, reused, managable, abstracted.
+2. the code inside the function is excuted when function is called.
+3.  Functions are a good way to organize your code and create reusable chunks of code
+4. eg of function 
+    	function bark(name, weight) {
+ 	if (weight > 20) {
+ 	console.log(name + " says WOOF WOOF");
+ 	} else {
+ 	console.log(name + " says woof woof");
+ 	 }
+	}
+
+	bark("rover", 23);  -- Function invokae
+5. Wired Function => Are function when we defined function with more parameter/less parameter/ without passing argument.
+   eg: *more parameter* 
+        function makeTea(cups, tea) {
+ 	console.log("Brewing " + cups + " cups of " + tea);
+ 	}
+ 	makeTea(3);
+ o/p: Brewing 3 cups of undefined
+
+    eg2: less parameter 
+    	function makeTea(cups, tea) {
+	 console.log("Brewing " + cups + " cups of " + tea);
+ 	}
+ 	makeTea(3, "Earl Grey", "hey ma!", 42);
+ o/p: Brewing 3 cups of Earl Grey
+
+    eg3: No parameter 
+         function barkAtTheMoon() {
+ 	console.log("Woooooooooooooo!");
+ 	}
+ 	barkAtTheMoon();
+
+ o/p: Woooooooooooooo!
+
+6. Tracing flow of function/Code : This explains the complete flow through of a function starting from variable assigining, calling the function and till desired output
+7. scope -  If the variable is declared outside a function, then you can use it anywhere in your code. If a variable is declared inside a function, then you can use it only     	     within that function.
+8. Two types of scope - Global & Local 
+   If a variable is declared outside a function, it’s GLOBAL. If it’s declared inside a function, it’s LOCAL.
+   eg : var avatar;  -- global scope
+	function speed(value) {
+    	var i = 0;  -- local scope
+    	var speedlimit; -- local scope
+    	if(value < 60) {
+        console.log('within limit');
+    	 }
+	}
+   Global scope : avatar 
+   local scope : speedlimit, i
+
+9. If you forget to declare a variable before using it, the variable will always be global (even if the first time you use it isin a function).
+10. JavaScript doesn’t care if your functions are declared before or after you use them.
+11. JavaScript starts executing the from the top to the bottom of your file. But, the truth is JavaScript actually makes two passes over your page: in the first pass it reads all the function definitions, and in the second it begins executing your code. So, that allows you to place functions anywhere in your file.
+
+Chapter 4 - Arrays 
+
+1. JavaScript arrays are used to store multiple values in a single variable. Arrays are a data structure for ordered data.
+	eg: var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54];
+2. Accessing an element in array 
+     var <name> = <arrayName>[2]; - This evaluates to the value of the flavors array at index 2, which is then assigned to the variable name.
+3.   Arrays use a zero-based index, where the first item is at index zero.You can access any item using its index.
+     For example, use myArray[1] to access item one (the second item in the array)
+4. Arrays also provide us the feature to to know how big is our array 
+     var <name> = <arrayName>.length; - gives us the lenght of the array 
+   Note: array length is calculated from 0.
+5. for loop can be used instead of while loop
+6.  A sparse array is just an array that has values at only a few indices and no values in between. You can create a sparse array easily, like this:
+    eg:	var sparseArray = [ ];
+	sparseArray[0] = true;
+ 	spraseArray[100] = true;
+7. Use the array literal notation to create a new array. 
+    eg: var <arrayname> = []
+8. Sparse arrays occur when there are undefined items in the middle of an array.
+9. You can add a new value to an array using push.
+
+
+
