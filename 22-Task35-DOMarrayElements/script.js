@@ -13,6 +13,8 @@ rengrateUser();
 rengrateUser();
 rengrateUser();
 
+
+
 // fn reg user 
 function rengrateUser() {
     fetch('https://randomuser.me/api')
